@@ -1,4 +1,4 @@
-function NewMeetup(props) {
+function NewMeetupPage(props) {
     return (
         <div>
             New Meetup
@@ -6,4 +6,4 @@ function NewMeetup(props) {
     );
 }
 
-export default NewMeetup;
+export default NewMeetupPage;
