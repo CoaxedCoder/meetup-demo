@@ -2,7 +2,7 @@ import classes from "./NewMeetupForm.module.css";
 import Card from "../ui/Card";
 import { useRef } from "react";
 
-export default function NewMeetupForm() {
+export default function NewMeetupForm(props) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -21,7 +21,8 @@ export default function NewMeetupForm() {
       address: eneteredAddress,
       description: eneteredDescription,
     };
-    console.log(meetUpData);
+    console.log(JSON.stringify(meetUpData));
+    props.onAddMeetup(meetUpData);
   }
 
   return (
