@@ -20,9 +20,10 @@ function AllMeetupsPage(props) {
           };
           meetups.push(meetup);
         }
-        setIsLoading(false);
-        console.log(meetups);
+
+        console.log("MEETUPS " + meetups);
         setLoadedMeetups(meetups);
+        setIsLoading(false);
       });
   }, []);
 
